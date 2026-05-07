@@ -1,0 +1,27 @@
+# Source Excel - never commit; we ship pre-built Parquet under data/ instead
+UserandTimecarddata.xlsx
+*.xlsx
+
+# Local pickle cache produced by services.excel_reader
+.excel-cache.pkl
+*.pkl
+
+# Streamlit secrets (never commit API keys)
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.venv/
+venv/
+env/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
